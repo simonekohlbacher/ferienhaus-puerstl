@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+:root {
+  /** colors **/
+  --color-green: #6E7355;
+  --color-brown: #A86B43;
+  --color-blue: #7DAEDB;
+  --color-offWhite: #F9F7F1;
+  --color-white: #FFF;
+  --color-anthrazit: #333933;
+  --color-bg-green: #6E73554D;
+  --color-bg-brown: #E4D8CB;
+
+  /** font-sizes **/
+  --font-size-h1: 1.9rem;
+  --font-size-h2: 2.07rem;
+  --font-size-h3: 1.9rem;
+  --font-size-h4: 1.4rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-p: 1.5rem; 
+  --font-size-button : 1.1rem; 
+  --font-size-small: 0.99rem;
+  --nav-height: 10rem;
+
+  /** fonts **/
+  --mainfont: 'Open Sans', sans-serif;
+  --headlinefont: 'Cormorant Garamond', serif;
+
+  /** gap **/
+  --gap-s: clamp(10px, 2.66vw, 15px);
+  --gap-m: clamp(20px, 5.33vw, 30px);
+  --gap-l: clamp(40px, 9.33vw, 50px);
+  --gap-xl: clamp(80px, 20vw, 150px);
+  --content-gap: clamp(100px, 20vw, 200px);
+
+  --border-radius: 0.30rem;
+}
+
+body {
+  font-size: 18px;
+  color: var(--color-anthrazit);
+  background-color: var(--color-offWhite);
+}
+
+.nav-link {
+  font-size: var(--font-size-h3);
+  font-family: var(--headlinefont);
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  
+}
+
+@media screen and (max-width: 768px)  {
+  .nav-link {
+  font-size: var(--font-size-h4);
+  }
+}
+
+
+.nav-link:hover {
+   text-decoration: underline;
+  color: var(--color-anthrazit);
+}
+
+
+/** FONTS **/
+
+p, li{
+  font-family: var(--mainfont), sans-serif;
+  font-size: var(--font-size-p);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-family: var(--headlinefont), sans-serif;
+  font-size: var(--font-size-h1);
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--headlinefont), sans-serif;
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: var(--headlinefont), sans-serif;
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  font-style: normal;
+}
+
+h4 {
+  font-family: var(--mainfont), sans-serif;
+  font-size: var(--font-size-h4);
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+/** BUTTONS **/
+
+.button {
+  font-family: var(--mainfont), sans-serif;
+  font-size: var(--font-size-button);
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--border-radius);
+  display: inline flex;
+  width: auto;
+  padding: calc(var(--gap-s)/2) var(--gap-s);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-primary {
+  border: 1px solid var(--color-green);
+  background-color: var(--color-green);
+  color: var(--color-offWhite);
+}
+
+.button-primary:hover {
+  background: none;
+  color: var(--color-green);
+}
+
+.button-primary.dark:hover {
+  border: 1px solid var(--color-anthrazit);
+  background: none;
+  color: var(--color-anthrazit);
+}
+
+.button-secondary {
+  border: 1px solid var(--color-anthrazit);
+}
+
+.button-secondary:hover {
+  border: 1px solid var(--color-green);
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+/** typography **/
+/* open-sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/OpenSans_Condensed-Medium.ttf') format('truetype');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/OpenSans_Condensed-Bold.ttf') format('truetype');
+  font-display: optional;
+}
+
+
+/* cormorant-garamond  */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/CormorantGaramond-Medium.ttf') format('truetype');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+  font-display: optional;
+}
