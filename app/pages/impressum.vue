@@ -6,7 +6,7 @@ import HeroSimple from "@/components/HeroSimple.vue";
 <template>
 
     <HeroSimple
-    backgroundImage="/../public/img/bergpanorama-1.jpg"
+    backgroundImage="/img/bergpanorama-1.jpg"
     altText="Bischofsmütze Salzburger Land"
     />
     
@@ -54,8 +54,8 @@ import HeroSimple from "@/components/HeroSimple.vue";
         
         <h4>Zusätzliche Infos</h4>
         <p class="mb-[var(--gap-m)]">
-          Design: Ferienhaus Pürstl </br>
-           Bildmaterial: Ferienhaus Pürstl, Reiteralm Bergbahnen, Schladming-Dachstein
+          Design: Ferienhaus Pürstl <br>
+           Bildmaterial: Ferienhaus Pürstl, Schladming-Dachstein
         </p>
     </div> 
 

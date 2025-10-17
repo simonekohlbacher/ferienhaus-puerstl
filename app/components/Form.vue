@@ -6,14 +6,22 @@ const email = ref('')
 const phone = ref('')
 const message = ref('')
 
-function submitForm() {
-  console.log({ name: name.value, email: email.value, message: message.value })
+function submitForm(event) {
+  event.preventDefault() // verhindert Seitenreload
+
+  console.log({
+    name: name.value,
+    email: email.value,
+    phone: phone.value,
+    message: message.value
+  })
 }
+
 </script>
 
 
 <template>
-  <form class="">
+  <form @submit="submitForm">
     
     <fieldset class="fieldset space-y-4 w-full mx-auto p-6 bg-[var(--color-bg-green)] rounded-lg shadow-lg rounded-box">
 
@@ -35,7 +43,7 @@ function submitForm() {
       <label class="label text-xl">
         <span class="label-text">Telefon</span>
       </label>
-      <input type="phone" placeholder="" v-model="phone" class="input input-bordered w-full bg-[var(--color-offWhite)] rounded-[var(--border-radius)]" />
+      <input type="tel" placeholder="" v-model="phone" class="input input-bordered w-full bg-[var(--color-offWhite)] rounded-[var(--border-radius)]" />
     </div>
 
     <div>

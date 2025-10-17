@@ -24,7 +24,7 @@ defineProps({
 
       <div class="absolute bottom-38 lg:left-28 left-12 xs:pr-18 text-left text-[var(--color-offWhite)]">
         <div class="flex flex-col gap-[var(--gap-s)]">
-          <h3 class="[font-size:var(--font-size-xxl)!important] uppercase font-bold">{{ title }}</h3>          
+          <h3 class="[font-size:var(--font-size-xxl)!important] uppercase font-bold leading-10">{{ title }}</h3>
           <p class="[font-size:var(--font-size-h3)!important]">{{ description }}</p>
         </div>
       </div>

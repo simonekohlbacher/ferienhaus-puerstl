@@ -1,9 +1,6 @@
 <script setup>
-import Hero from "../../components/Hero.vue";
-import ImageText from "../../components/ImageText.vue";
-import CardSimple from "../../components/CardSimple.vue";
-import Slider from "../../components/Slider.vue";
-import Form from "../../components/Form.vue";
+import Hero from "../components/Hero.vue";
+import Slider from "../components/Slider.vue";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 </script>
 
@@ -27,7 +24,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
     <a href="mailto:info@reiteralm-ferienhaus.at" class="inline-block mt-8 button button-primary">E-Mail senden</a>
   </div>
 
-  <div class="text-left bg-[var(--color-bg-green)] mb-[var(--gap-xl)] p-[var(--gap-xl)]">
+  <div class="text-left bg-[var(--color-bg-green)] mb-[var(--gap-xl)] p-[var(--gap-l)] md:p-[var(--gap-xl)]">
     <h2 class="mb-[var(--gap-l)]">Kontaktdaten</h2>
     <div class="flex flex-col gap-[var(--gap-s)]">
         <p><font-awesome-icon :icon="['fa', 'user']" class="text-2xl mr-[var(--gap-s)]" />Ferienhaus Pürstl, Familie Kohlbacher-Pürstl</p>
@@ -50,7 +47,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
   <!--
   <div class="mb-[var(--gap-l)] p-[var(--gap-xl)] ">
     <div class="text-center max-w-[90vw] mx-auto mb-[var(--gap-l)]">
-      <h2 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">Kontakt</h2>
+      <h2 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">Kontaktformular</h2>
       <p class="[font-size:var(--font-size-h4)]">
         Sag uns, wann du kommen möchtest! Buchungen erfolgen bei uns immer auf Anfrage, damit wir dir ein schönes Ferienerlebnis garantieren können.
       </p>
@@ -59,24 +56,24 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
   </div>
 -->
 
-<Slider :imgs="[
-    '/img/haus/ferienhaus-puerstl-sommer-1.jpg',
-    '/img/haus/ferienhaus-puerstl-winter-1.jpg',
-    '/img/haus/ferienhaus-puerstl-badezimmer.jpg',
-    '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-1.jpg',
-    '/img/haus/ferienhaus-puerstl-einzelbett.jpg',
-    '/img/haus/ferienhaus-puerstl-pistenblick.jpg',
-    '/img/haus/ferienhaus-puerstl-plan-erdgeschoss.jpg',
-    '/img/haus/ferienhaus-puerstl-plan-obergeschoss.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-1.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-2.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-bett.jpg',
-    '/img/haus/ferienhaus-puerstl-schlafzimmer-naturblick.jpg',
-     '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-2.jpg',
-    '/img/haus/schladming-dachstein-sommercard.jpg',
-    '/img/haus/ferienhaus-puerstl-kueche-1.jpg',
-    '/img/haus/ferienhaus-puerstl-winter-2.jpg',
-    ]" />
+  <Slider :imgs="[
+  { src: '/img/haus/ferienhaus-puerstl-sommer-1.jpg', alt: 'Ferienhaus Puerstl im Sommer' },
+  { src: '/img/haus/ferienhaus-puerstl-winter-1.jpg', alt: 'Ferienhaus Puerstl im Winter' },
+  { src: '/img/haus/ferienhaus-puerstl-badezimmer.jpg', alt: 'Badezimmer des Ferienhauses' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-1.jpg', alt: 'Großes Schlafzimmer' },
+  { src: '/img/haus/ferienhaus-puerstl-einzelbett.jpg', alt: 'Einzelbett im Schlafzimmer' },
+  { src: '/img/haus/ferienhaus-puerstl-pistenblick.jpg', alt: 'Pistenblick vom Ferienhaus' },
+  { src: '/img/haus/ferienhaus-puerstl-plan-erdgeschoss.jpg', alt: 'Grundriss Erdgeschoss' },
+  { src: '/img/haus/ferienhaus-puerstl-plan-obergeschoss.jpg', alt: 'Grundriss Obergeschoss' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-1.jpg', alt: 'Wohnküche mit Essbereich' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-2.jpg', alt: 'Wohnküche mit Sofa' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-bett.jpg', alt: 'Wohnküche mit Bett' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-naturblick.jpg', alt: 'Schlafzimmer mit Naturblick' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-2.jpg', alt: 'Zweites großes Schlafzimmer' },
+  { src: '/img/haus/schladming-dachstein-sommercard.jpg', alt: 'Schladming Dachstein Sommercard' },
+  { src: '/img/haus/ferienhaus-puerstl-kueche-1.jpg', alt: 'Küche des Ferienhauses' },
+  { src: '/img/haus/ferienhaus-puerstl-winter-2.jpg', alt: 'Winteransicht Ferienhaus Puerstl' }
+]" />
 
 </template>
 

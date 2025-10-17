@@ -12,19 +12,19 @@ const menuOpen = ref(false)
     <font-awesome-icon
       v-if="!menuOpen"
       :icon="['fas', 'bars']"
-      class="text-3xl md:text-5xl cursor-pointer transition-transform duration-300"
+      class="text-2xl md:text-5xl cursor-pointer transition-transform duration-300"
     />
     <font-awesome-icon
       v-else
       :icon="['fas', 'xmark']"
-      class="text-3xl md:text-5xl cursor-pointer transition-transform duration-300 rotate-90"
+      class="text-2xl md:text-5xl cursor-pointer transition-transform duration-300 rotate-90"
     />
   </div>
 
   <!-- Dropdown -->
   <ul
     v-if="menuOpen"
-    class="w-50 md:w-100 absolute left-20 top-0 bg-[var(--color-white)]/20 rounded-box shadow-lg p-6 transition-all duration-300"
+    class="w-70 md:w-120 absolute top-12 md:left-20 md:top-0 bg-[var(--color-white)]/20 rounded-box shadow-lg p-6 transition-all duration-300"
   >
     <li class="mb-[var(--gap-s)]">
       <RouterLink to="/ferienhaus" class="nav-link" @click="menuOpen = false">
@@ -47,7 +47,7 @@ const menuOpen = ref(false)
     </div>
     <div class="navbar-center">
       <div class="flex items-between">
-        <a href="/">
+        <a href="/" class="md:mt-12">
           <img 
             src="/logos/logo_ferienhaus_puerstl_inverted.png" 
             alt="Ferienhaus Pürstl" 
@@ -56,13 +56,13 @@ const menuOpen = ref(false)
         </a>
       </div>
     </div>
-    <div class="navbar-end">
+    <div class="navbar-end p-8">
       <div class="flex gap-[var(--gap-s)] md:p-8">
         <a href="https://www.instagram.com/ferienhaus_puerstl/?hl=en" target="_blank">
-          <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-2xl hover:text-[var(--color-green)] transition-colors duration-500"/>
+          <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-2xl md:text-3xl hover:text-[var(--color-green)] transition-colors duration-500"/>
         </a>
         <a href="https://www.facebook.com/profile.php?id=100075966014770" target="_blank">
-          <FontAwesomeIcon :icon="['fab', 'facebook']" class="text-2xl hover:text-[var(--color-green)] transition-colors duration-300"/>
+          <FontAwesomeIcon :icon="['fab', 'facebook']" class="text-2xl md:text-3xl hover:text-[var(--color-green)] transition-colors duration-300"/>
         </a>
       </div>
     </div>

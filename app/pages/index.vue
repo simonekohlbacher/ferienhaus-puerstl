@@ -11,7 +11,7 @@ import Slider from "../components/Slider.vue";
   <Hero
   title="Ankommen, Durchatmen, Genießen.."
   description="..im Ferienhaus Pürstl - direkt an der Reiteralm."
-  backgroundImage="/../img/skifahren-schladming-dachstein.jpg"
+  backgroundImage="/img/skifahren-schladming-dachstein.jpg"
   altText="Skifahrerinnen auf der Piste"
   :opacity="0.3"
   cText="© Schladming-Dachstein | Peter Burgstaller"
@@ -30,20 +30,20 @@ import Slider from "../components/Slider.vue";
     buttonText="Aktuelle Events"
     buttonLink="https://www.schladming-dachstein.at/de/Alle-Veranstaltungen"
     :openBlank="true"
-    img="/../img/haus/ferienhaus-puerstl-sommer-1.jpg"
+    img="/img/haus/ferienhaus-puerstl-sommer-1.jpg"
     altText="Außenansicht Ferienhaus Pürstl"
     bgColor="bg-[var(--color-bg-green)]"
   >
   </ImageText>
 
-  <div class="px-24 py-12 flex gap-[var(--gap-l) justify-center flex-wrap gap-[var(--gap-l)] mb-[var(--gap-xl)]">
+  <div class="px-[var(--gap-l)] py-12 flex gap-[var(--gap-l)] justify-center flex-wrap gap-[var(--gap-l)] mb-[var(--gap-xl)]">
     <Card
       headline="Dein Zuhause in den Bergen"
       description="Gemütlich, modern und ruhig gelegen – genau neben der Reiteralm-Piste"
       buttonText="Mehr erfahren"
       buttonLink="/ferienhaus"
       :openBlank="false"
-      img="/../img/haus/ferienhaus-puerstl-winter-1.jpg"
+      img="/img/haus/ferienhaus-puerstl-winter-1.jpg"
       altText="Außenansicht Ferienhaus Pürstl">
     </Card>
     <Card
@@ -52,7 +52,7 @@ import Slider from "../components/Slider.vue";
       buttonText="Mehr erfahren"
       buttonLink="/erleben"
       :openBlank="false"
-      img="/../img/wandern-herbst-filzmoos.jpg"
+      img="/img/wandern-herbst-filzmoos.jpg"
       altText="Wandern im Herbst">
     </Card>
     <Card
@@ -61,7 +61,7 @@ import Slider from "../components/Slider.vue";
       buttonText="Mehr erfahren"
       buttonLink="/kontakt"
       :openBlank="false"
-      img="/../img/gastgeber.jpg"
+      img="/img/gastgeber.jpg"
       altText="Gastgeber Familie Kohlbacher Pürstl">
     </Card>
   </div>
@@ -72,24 +72,23 @@ import Slider from "../components/Slider.vue";
   </div>
 
   <Slider :imgs="[
-    '/img/haus/ferienhaus-puerstl-sommer-1.jpg',
-    '/img/haus/ferienhaus-puerstl-winter-1.jpg',
-    '/img/haus/ferienhaus-puerstl-badezimmer.jpg',
-    '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-1.jpg',
-    '/img/haus/ferienhaus-puerstl-einzelbett.jpg',
-    '/img/haus/ferienhaus-puerstl-pistenblick.jpg',
-    '/img/haus/ferienhaus-puerstl-plan-erdgeschoss.jpg',
-    '/img/haus/ferienhaus-puerstl-plan-obergeschoss.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-1.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-2.jpg',
-    '/img/haus/ferienhaus-puerstl-wohnkueche-bett.jpg',
-    '/img/haus/ferienhaus-puerstl-schlafzimmer-naturblick.jpg',
-     '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-2.jpg',
-    '/img/haus/schladming-dachstein-sommercard.jpg',
-    '/img/haus/ferienhaus-puerstl-kueche-1.jpg',
-    '/img/haus/ferienhaus-puerstl-winter-2.jpg',
-    ]" />
-
+  { src: '/img/haus/ferienhaus-puerstl-sommer-1.jpg', alt: 'Ferienhaus Puerstl im Sommer' },
+  { src: '/img/haus/ferienhaus-puerstl-winter-1.jpg', alt: 'Ferienhaus Puerstl im Winter' },
+  { src: '/img/haus/ferienhaus-puerstl-badezimmer.jpg', alt: 'Badezimmer des Ferienhauses' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-1.jpg', alt: 'Großes Schlafzimmer' },
+  { src: '/img/haus/ferienhaus-puerstl-einzelbett.jpg', alt: 'Einzelbett im Schlafzimmer' },
+  { src: '/img/haus/ferienhaus-puerstl-pistenblick.jpg', alt: 'Pistenblick vom Ferienhaus' },
+  { src: '/img/haus/ferienhaus-puerstl-plan-erdgeschoss.jpg', alt: 'Grundriss Erdgeschoss' },
+  { src: '/img/haus/ferienhaus-puerstl-plan-obergeschoss.jpg', alt: 'Grundriss Obergeschoss' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-1.jpg', alt: 'Wohnküche mit Essbereich' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-2.jpg', alt: 'Wohnküche mit Sofa' },
+  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-bett.jpg', alt: 'Wohnküche mit Bett' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-naturblick.jpg', alt: 'Schlafzimmer mit Naturblick' },
+  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-2.jpg', alt: 'Zweites großes Schlafzimmer' },
+  { src: '/img/haus/schladming-dachstein-sommercard.jpg', alt: 'Schladming Dachstein Sommercard' },
+  { src: '/img/haus/ferienhaus-puerstl-kueche-1.jpg', alt: 'Küche des Ferienhauses' },
+  { src: '/img/haus/ferienhaus-puerstl-winter-2.jpg', alt: 'Winteransicht Ferienhaus Puerstl' }
+]" />
 
 </template>
 

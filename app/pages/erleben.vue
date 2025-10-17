@@ -1,8 +1,6 @@
 <script setup>
 import Hero from "@/components/Hero.vue";
 import ImageText from "@/components/ImageText.vue";
-import CardSimple from "@/components/CardSimple.vue";
-import Slider from "@/components/Slider.vue";
 </script>
 
 <template>
@@ -36,10 +34,10 @@ import Slider from "@/components/Slider.vue";
 
 
   <div class="flex flex-col md:flex-row justify-center gap-[var(--gap-m)] mb-[var(--gap-xl)]">
-    <img src="/public/img/haus/schladming-dachstein-sommercard.jpg" alt="Schladming-Dachstein Sommercard" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
-    <img src="/public/img/haus/ferienhaus-puerstl-winter-2.jpg" alt="Ferienhaus Pürstl im Winter" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
+    <img src="/img/haus/schladming-dachstein-sommercard.jpg" alt="Schladming-Dachstein Sommercard" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
+    <img src="/img/haus/ferienhaus-puerstl-winter-2.jpg" alt="Ferienhaus Pürstl im Winter" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
     <div class="relative">
-      <img src="/public/img/kulinarik-krapfen.jpg" alt="Alm Kulinarik" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
+      <img src="/img/kulinarik-krapfen.jpg" alt="Alm Kulinarik" class="w-full md:w-[30vw] hover:grayscale transition duration-800">
       <span class="absolute bottom-2 left-2 [font-size:var(--font-size-small)] text-[var(--color-white)] opacity-100">© Schladming-Dachstein | Peter Burgstaller</span>
     </div>
   </div>
@@ -51,7 +49,7 @@ import Slider from "@/components/Slider.vue";
     buttonLink="https://www.schladming-dachstein.at/de/Sommer"
     openBlank="true"
     bgColor="bg-[var(--color-bg-brown)]"
-    img="/../img/schafe-berg.jpg"
+    img="/img/schafe-berg.jpg"
     altText="Schafe am Berg bei Sonnenaufgang"
   >
   </ImageText>

@@ -5,7 +5,7 @@ import HeroSimple from "@/components/HeroSimple.vue";
 
 <template>
       <HeroSimple
-       backgroundImage="/../public/img/bergpanorama-1.jpg"
+       backgroundImage="/img/bergpanorama-1.jpg"
        altText="Bischofsmütze Salzburger Land"
         />
 

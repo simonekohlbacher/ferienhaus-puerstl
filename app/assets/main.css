@@ -16,14 +16,14 @@
   --color-bg-brown: #E4D8CB;
 
   /** font-sizes **/
-  --font-size-h1: 1.9rem;
-  --font-size-h2: 2.07rem;
-  --font-size-h3: 1.9rem;
-  --font-size-h4: 1.4rem;
-  --font-size-xxl: 2.5rem;
-  --font-size-p: 1.5rem; 
-  --font-size-button : 1.1rem; 
-  --font-size-small: 0.99rem;
+  --font-size-h1: clamp(22px, calc(22px + (34 - 22) * ((100vw - 375px) / (1920 - 375))), 34px);
+  --font-size-h2: clamp(32px, calc(32px + (38 - 32) * ((100vw - 375px) / (1920 - 375))), 38px);
+  --font-size-h3: clamp(22px, calc(22px + (34 - 22) * ((100vw - 375px) / (1920 - 375))), 34px);
+  --font-size-h4: clamp(18px, calc(18px + (25 - 18) * ((100vw - 375px) / (1920 - 375))), 25px);
+  --font-size-xxl: clamp(35px, calc(35px + (45 - 35) * ((100vw - 375px) / (1920 - 375))), 45px);
+  --font-size-p: clamp(15px, calc(15px + (18 - 15) * ((100vw - 375px) / (1920 - 375))), 18px);
+  --font-size-button : clamp(17px, calc(17px + (19 - 17) * ((100vw - 375px) / (1920 - 375))), 19px);
+  --font-size-small: clamp(14px, calc(14px + (16 - 14) * ((100vw - 375px) / (1920 - 375))), 16px);
   --nav-height: 10rem;
 
   /** fonts **/
@@ -46,13 +46,26 @@ body {
   background-color: var(--color-offWhite);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out;
+}
+
+img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
+
+
+
 .nav-link {
   font-size: var(--font-size-h3);
-  font-family: var(--headlinefont);
+  font-family: var(--headlinefont), serif;
   font-weight: 800;
   text-transform: uppercase;
   transition: all 0.5s ease;
-  
+
 }
 
 @media screen and (max-width: 768px)  {
