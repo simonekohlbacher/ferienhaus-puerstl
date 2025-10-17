@@ -5,18 +5,17 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 <template>
   <footer class="footer sm:footer-horizontal bg-[var(--color-green)] p-10 items-end justify-between text-[var(--color-white)]">
     <aside>
-
       <p class="pl-2 [font-size:var(--font-size-small)!important]">
         © Ferienhaus Pürstl
         <br />
         Familie Kohlbacher-Pürstl<br/>
         Gleiming 19<br/>
         8973 Pichl/Schladming<br/>
+      </p>
         <div class="flex flex-row gap-[var(--gap-s)] mt-[var(--gap-s)]">
           <a href="tel:+43 664 46 36 602"><font-awesome-icon :icon="['fa', 'phone']" class="text-xl" /></a>
           <a href="mailto:info@ferienhaus-reiteralm.at"><font-awesome-icon :icon="['fa', 'envelope']" class="text-xl" /></a>
         </div>
-      </p>
     </aside>
     <nav>
       <div class="flex gap-[var(--gap-m)]">
