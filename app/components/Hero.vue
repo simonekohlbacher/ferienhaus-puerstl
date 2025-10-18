@@ -22,7 +22,7 @@ defineProps({
       <NuxtImg
           :src="backgroundImage"
           :alt="altText"
-          class="min-h-screen object-cover object-center"
+          class="min-h-screen object-cover object-center w-[100vw]"
           priority
       />
       <div class="hero-overlay relative bg-[var(--color-anthrazit)]" :style="{ opacity: opacity }">
