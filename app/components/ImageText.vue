@@ -21,7 +21,7 @@ defineProps({
       </figure>
     </div>
     <div class="flex flex-col justify-center gap-[var(--gap-m)]">
-      <h3 class="[font-size:var(--font-size-h3)] font-bold">{{ headline }}</h3>
+      <h2 class="[font-size:var(--font-size-h3)] font-bold">{{ headline }}</h2>
       <p class="mb-8 [font-size:var(--font-size-p)]">{{ description }}</p>
       <div class="w-full flex justify-start">
       <a 

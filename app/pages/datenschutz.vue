@@ -1,7 +1,3 @@
-<script setup>
-import HeroSimple from "@/components/HeroSimple.vue";
-</script>
-
 
 <template>
       <HeroSimple

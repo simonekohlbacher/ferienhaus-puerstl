@@ -1,5 +1,6 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import { NuxtImg } from '#components'
 import {ref } from 'vue';
 const menuOpen = ref(false)
 </script>
@@ -48,10 +49,12 @@ const menuOpen = ref(false)
     <div class="navbar-center">
       <div class="flex items-between">
         <a href="/" class="md:mt-12">
-          <img 
-            src="/logos/logo_ferienhaus_puerstl_inverted.png" 
-            alt="Ferienhaus Pürstl" 
-            class="w-[10rem] md:w-[14rem] h-auto transition-all duration-500 hover:scale-105 hover:rotate-1"
+          <NuxtImg
+              src="/logos/logo_ferienhaus_puerstl_inverted.png"
+              alt="Ferienhaus Pürstl"
+              class="w-[10rem] md:w-[14rem] h-auto transition-all duration-500 hover:scale-105 hover:rotate-1"
+              priority
+              preload
           />
         </a>
       </div>

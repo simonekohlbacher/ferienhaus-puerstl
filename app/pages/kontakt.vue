@@ -1,7 +1,7 @@
 <script setup>
-import Hero from "../components/Hero.vue";
-import Slider from "../components/Slider.vue";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import { defineAsyncComponent } from 'vue'
+const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
 </script>
 
 
@@ -56,24 +56,9 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
   </div>
 -->
 
-  <Slider :imgs="[
-  { src: '/img/haus/ferienhaus-puerstl-sommer-1.jpg', alt: 'Ferienhaus Puerstl im Sommer' },
-  { src: '/img/haus/ferienhaus-puerstl-winter-1.jpg', alt: 'Ferienhaus Puerstl im Winter' },
-  { src: '/img/haus/ferienhaus-puerstl-badezimmer.jpg', alt: 'Badezimmer des Ferienhauses' },
-  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-1.jpg', alt: 'Großes Schlafzimmer' },
-  { src: '/img/haus/ferienhaus-puerstl-einzelbett.jpg', alt: 'Einzelbett im Schlafzimmer' },
-  { src: '/img/haus/ferienhaus-puerstl-pistenblick.jpg', alt: 'Pistenblick vom Ferienhaus' },
-  { src: '/img/haus/ferienhaus-puerstl-plan-erdgeschoss.jpg', alt: 'Grundriss Erdgeschoss' },
-  { src: '/img/haus/ferienhaus-puerstl-plan-obergeschoss.jpg', alt: 'Grundriss Obergeschoss' },
-  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-1.jpg', alt: 'Wohnküche mit Essbereich' },
-  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-2.jpg', alt: 'Wohnküche mit Sofa' },
-  { src: '/img/haus/ferienhaus-puerstl-wohnkueche-bett.jpg', alt: 'Wohnküche mit Bett' },
-  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-naturblick.jpg', alt: 'Schlafzimmer mit Naturblick' },
-  { src: '/img/haus/ferienhaus-puerstl-schlafzimmer-gross-2.jpg', alt: 'Zweites großes Schlafzimmer' },
-  { src: '/img/haus/schladming-dachstein-sommercard.jpg', alt: 'Schladming Dachstein Sommercard' },
-  { src: '/img/haus/ferienhaus-puerstl-kueche-1.jpg', alt: 'Küche des Ferienhauses' },
-  { src: '/img/haus/ferienhaus-puerstl-winter-2.jpg', alt: 'Winteransicht Ferienhaus Puerstl' }
-]" />
+  <ClientOnly>
+    <Slider />
+  </ClientOnly>
 
 </template>
 

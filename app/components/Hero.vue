@@ -1,4 +1,5 @@
 <script setup>
+import { NuxtImg } from '#components'
 
 defineProps({
   title: String,
@@ -8,7 +9,7 @@ defineProps({
   opacity: {
     type: Number,
     default: 0.5
-  }, 
+  },
   cText: String
 });
 
@@ -16,9 +17,15 @@ defineProps({
 
 <template>
   <!-- https://daisyui.com/components/hero/?lang=de -->
-    <div class="hero min-h-screen -mt-[var(--nav-height)] z-0 mb-[calc(var(--gap-m)+var(--gap-l))]"
-      :style="{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined }">
-      <div class="hero-overlay relative bg-[var(--color-anthrazit)]" :style="{ opacity: opacity }" :alt="{ altText}">
+
+<div class="hero min-h-screen -mt-[var(--nav-height)] z-0 mb-[calc(var(--gap-m)+var(--gap-l))]">
+      <NuxtImg
+          :src="backgroundImage"
+          :alt="altText"
+          class="min-h-screen object-cover object-center"
+          priority
+      />
+      <div class="hero-overlay relative bg-[var(--color-anthrazit)]" :style="{ opacity: opacity }">
         <span class="absolute bottom-4 left-4 [font-size:var(--font-size-small)] text-[var(--color-white)] opacity-100">{{ cText }}</span>
       </div>
 

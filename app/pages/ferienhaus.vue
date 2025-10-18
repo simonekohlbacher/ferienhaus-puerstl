@@ -1,8 +1,6 @@
 <script setup>
-import Hero from "../components/Hero.vue";
-import CardSimple from "../components/CardSimple.vue";
-import ImageText from "../components/ImageText.vue";
-import Slider from "../components/Slider.vue";
+import { defineAsyncComponent } from 'vue'
+const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
 </script>
 
 <template>
@@ -66,7 +64,9 @@ import Slider from "../components/Slider.vue";
     <a target="blank" href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie" class="inline-block mt-8 button button-primary">AGBH</a>
   </div>
 
-  <Slider />
+  <ClientOnly>
+    <Slider />
+  </ClientOnly>
 
 
 </template>

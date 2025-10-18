@@ -2,7 +2,8 @@
 import Hero from "../components/Hero.vue";
 import Card from "../components/Card.vue";
 import ImageText from "../components/ImageText.vue";
-import Slider from "../components/Slider.vue";
+import { defineAsyncComponent } from 'vue'
+const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
 
 </script>
 
@@ -71,7 +72,9 @@ import Slider from "../components/Slider.vue";
     <p class="[font-size:var(--font-size-h4)]">Unser Selbstversorger-Häuschen bietet Platz für entspannte Tage zu zweit, mit der Familie oder Freunden. Direkt an der Piste im Winter und im Sommer der perfekte Ausgangspunkt für Abenteuer in der Schladming-Dachstein Region.</p>
   </div>
 
-  <Slider />
+  <ClientOnly>
+    <Slider />
+  </ClientOnly>
 
 </template>
 

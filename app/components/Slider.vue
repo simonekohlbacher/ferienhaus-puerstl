@@ -1,5 +1,6 @@
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
+import { ref } from 'vue'
+import { NuxtImg } from '#components'
 
 const imgs = [
   { src: '/img/haus/ferienhaus-puerstl-sommer-1.jpg', alt: 'Ferienhaus Pürstl im Sommer' },
@@ -19,25 +20,27 @@ const imgs = [
   { src: '/img/haus/ferienhaus-puerstl-kueche-1.jpg', alt: 'Küche des Ferienhauses' },
   { src: '/img/haus/ferienhaus-puerstl-winter-2.jpg', alt: 'Winteransicht Ferienhaus Pürstl' }
 ];
-// Immer wenn currentIndex.value sich ändert, berechnet Vue neu, wie viel translateX der Container bekommen soll
-const currentIndex = ref(0);
-
+const currentIndex = ref(0)
 const prevSlide = () => {
-  currentIndex.value = (currentIndex.value - 1 + imgs.length) % imgs.length;
-};
-
+  currentIndex.value = (currentIndex.value - 1 + imgs.length) % imgs.length
+}
 const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % imgs.length;
-};
+  currentIndex.value = (currentIndex.value + 1) % imgs.length
+}
 </script>
-
-
 
 <template>
   <div class="relative w-full overflow-hidden mb-[var(--content-gap)] bg-[var(--color-bg-brown)] py-12">
     <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
       <div v-for="(img, index) in imgs" :key="index" class="flex-shrink-0 w-full flex justify-center items-center">
-        <img :src="img.src" :alt="img.alt" class="max-w-[80vw] max-h-[50vh]" />
+        <NuxtImg
+            :src="img.src"
+            :alt="img.alt"
+            class="max-w-[80vw] max-h-[50vh] object-cover"
+            format="webp"
+            :sizes="`(max-width: 768px) 90vw, 800px`"
+            lazy
+        />
       </div>
     </div>
     <!-- Navigation Buttons -->
@@ -47,8 +50,3 @@ const nextSlide = () => {
     </div>
   </div>
 </template>
-
-
-
-
-

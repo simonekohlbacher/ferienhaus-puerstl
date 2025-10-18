@@ -11,5 +11,12 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss()],
   },
-   css: ['../app/assets/main.css']
+  css: ['../app/assets/main.css'],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'de'
+      }
+    }
+  }
 })

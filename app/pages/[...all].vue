@@ -5,7 +5,7 @@ import HeroSimple from "@/components/HeroSimple.vue";
 
 <template>
     <HeroSimple
-      backgroundImage="/../public/img/schafe-reiteralm.jpg"
+      backgroundImage="/img/schafe-reiteralm.jpg"
       altText="Schafe auf der Reiteralm"
       />
 

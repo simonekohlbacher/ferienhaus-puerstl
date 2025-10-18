@@ -1,7 +1,3 @@
-<script setup>
-import Hero from "@/components/Hero.vue";
-import ImageText from "@/components/ImageText.vue";
-</script>
 
 <template>
 
@@ -27,7 +23,7 @@ import ImageText from "@/components/ImageText.vue";
     description="Erlebe grenzenlosen Wintergenuss in der Region Schladming-Dachstein oder Richtung Salzburger Land: Genieße die Ski- und Snowboard-Action auf den Pisten der 4-Berge-Skischaukel “Hauser Kaibling, Planai, Hochwurzen, Reiteralm”. Gönne auch deinem Auto eine kleine Auszeit und schwing dich direkt vom Häuschen auf die Piste! Die Winter-Talstation der Reiteralm ist nur 300 Meter entfernt und die Skipiste erreichst du in wenigen Schritten. Gemütlich Wedeln oder in actiongeladene Abenteuer stürzen? HIer ist für jede*n etwas dabei! Doch auch abseits der Piste gibt es einiges zu entdecken: Bestaune die Winterwelt bei einer romantischen Winter-Wanderung, genieße die frische Winterluft bei einer Schneeschuhtour oder lade die Energiereserven bei einer Langlauftour auf."
     buttonText="Mehr Winter Highlights"
     buttonLink="https://www.schladming-dachstein.at/de/Winter"
-    :openBlank="true"
+    :openBlank=true
     bgColor="bg-[var(--color-bg-green)]"
   >
   </ImageText>
@@ -47,7 +43,7 @@ import ImageText from "@/components/ImageText.vue";
     description="Genieße im Bergsommer die frische Luft und atemberaubende Ausblicke auf die umliegende Bergwelt. Erlebe Abwechslung beim Mountainbiken Wandern, Mountain GoKart und vielem mehr. Im Bergherbst bieten dir die Schladminger und Radstädter Tauern wahre Bilderbuch-Momente. Bei uns hast du den perfekten Ausgangspunkt für unzählige Wander- und Biketouren und einzigartigen Sommer Abenteuern. Im Sommer genießt du außerdem die Vorteile der Schladming-Dachstein Sommer-Card."
     buttonText="Mehr Sommer-Abenteuer"
     buttonLink="https://www.schladming-dachstein.at/de/Sommer"
-    openBlank="true"
+    :openBlank=true
     bgColor="bg-[var(--color-bg-brown)]"
     img="/img/schafe-berg.jpg"
     altText="Schafe am Berg bei Sonnenaufgang"
