@@ -49,13 +49,15 @@ const menuOpen = ref(false)
     <div class="navbar-center">
       <div class="flex items-between">
         <a href="/" class="md:mt-12">
-          <NuxtImg
+          <div class="inline-block transition-transform duration-500 hover:scale-105 hover:rotate-1">
+            <NuxtImg
               src="/logos/logo_ferienhaus_puerstl_inverted.png"
               alt="Ferienhaus Pürstl"
-              class="w-[10rem] md:w-[14rem] h-auto transition-all duration-500 hover:scale-105 hover:rotate-1"
+              class="w-[10rem] md:w-[14rem] h-auto"
               priority
               preload
-          />
+            />
+          </div>
         </a>
       </div>
     </div>
