@@ -1,7 +1,5 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import { defineAsyncComponent } from 'vue'
-const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
 </script>
 
 
@@ -56,9 +54,9 @@ const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
   </div>
 -->
 
-  <ClientOnly>
-    <Slider />
-  </ClientOnly>
+
+  <Slider />
+
 
 </template>
 

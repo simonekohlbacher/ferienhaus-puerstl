@@ -1,6 +1,4 @@
 <script setup>
-import { defineAsyncComponent } from 'vue'
-const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
 </script>
 
 <template>
@@ -64,9 +62,8 @@ const Gallery = defineAsyncComponent(() => import('@/components/Slider.vue'))
     <a target="blank" href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie" class="inline-block mt-8 button button-primary">AGBH</a>
   </div>
 
-  <ClientOnly>
-    <Slider />
-  </ClientOnly>
+
+  <Slider />
 
 
 </template>
