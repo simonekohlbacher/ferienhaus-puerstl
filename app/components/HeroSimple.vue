@@ -12,7 +12,7 @@ defineProps({
     <NuxtImg
         :src="backgroundImage"
         :alt="altText"
-        class="min-h-screen object-cover object-center"
+        class="min-h-screen object-cover object-center w-full"
     />
   </div>
 </template>

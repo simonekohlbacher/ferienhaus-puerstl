@@ -33,11 +33,6 @@
           Bei Verweisen auf fremde Internetseiten ("Links"), die außerhalb unseres Verantwortungsbereiches liegen, würde eine Haftungsverpflichtungausschließlich in dem Fall in Kraft treten, in dem wir von den Inhalten wissen und es uns möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Hiermit erklären wir ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den verlinkten Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten Seiten haben wir keinerlei Einfluss. Sollten diese verlinkten Seiten Inhalte rechtswidriger Art enthalten oder auch moralisch bedenklich sein, so distanzieren wir uns hiermit von diesen Inhalten und bitten darum uns davon in Kenntnis zu setzen und diese Links werden sofort aus dem Internetangebot entfernt.
         </p>
         
-        <h4>Datenschutz</h4>
-        <p class="mb-[var(--gap-m)]">
-          Die Internetseiten dieser Website können Sie im Normalfall aufrufen, ohne Angaben über Ihre Person zu machen. Werden Ihr Name, Ihre Anschrift oder sonstige persönliche oder geschäftliche Daten von Ihnen eingegeben, so erfolgt die Bekanntgabe dieser Daten seitens des Nutzers auf ausdrücklich freiwilliger Basis. Wenn Sie sich entschließen, dem Medieninhaber persönliche Daten über das Internet zu überlassen, damit z. B. Korrespondenz abgewickelt oder eine Anmeldung ausgeführt werden kann, so unterliegen diese Daten den strengen Regelungen des Datenschutzgesetzes (DSG 2000) der Republik Österreich. Durch die Aufrufe der einzelnen Seite erhält der Medieninhaber Nutzungsdaten, die möglicherweise eine Identifizierung zulassen (zum Beispiel IP-Adresse, Datum, Uhrzeit und betrachtete Seiten). Diese Daten werden manchmal ausgewertet, um das Nutzerverhalten kennen zu lernen und Statistiken aufzustellen. Es findet keine personen-bezogene Verwertung statt. Die statistische Auswertung anonymisierter Datensätze bleibt vorbehalten.
-        </p>
-        
         <h4>Weitergabe personenbezogener Informationen an Dritte</h4>
         <p class="mb-[var(--gap-m)]">
           Soweit der Medieninhaber gesetzlich oder per Gerichtsbeschluss dazu verpflichtet ist, wird er Ihre Daten im geforderten Umfang an auskunfts-berechtigte Stellen übermitteln. Für andere Zwecke gibt der Medieninhaber Ihre Daten nicht ohne Ihr ausdrückliches Einverständnis weiter.
@@ -50,7 +45,7 @@
         
         <h4>Zusätzliche Infos</h4>
         <p class="mb-[var(--gap-m)]">
-          Design: Ferienhaus Pürstl <br>
+          Design & technische Umsetzung: Ferienhaus Pürstl <br>
            Bildmaterial: Ferienhaus Pürstl, Schladming-Dachstein
         </p>
     </div> 
