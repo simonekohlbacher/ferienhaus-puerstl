@@ -8,6 +8,16 @@
     
     <div class="mx-[var(--gap-xl)] mb-[var(--gap-xl)]">
         <h1 class="mb-[var(--gap-l)]">Impressum</h1>
+
+        <h4>Kontakt</h4>
+        <p class="mb-[var(--gap-m)]">
+          Ferienhaus Pürstl<br>
+          Josef Pürstl<br>
+          Gleiming 19<br>
+          8973 Pichl/Schladming<br>
+          info@reiteralm-ferienhaus.at     
+        </p>
+
         <h4>Allgemein</h4>
         <p class="mb-[var(--gap-m)]">
           Alle Informationen und Erklärungen dieser Internetseiten sind unverbindlich. Der Medieninhaber sowie der Ersteller der Website übernehmen für die Richtigkeit, Aktualität und Vollständigkeit der Inhalte keine Gewähr. Es ergeben sich keine Rechtsansprüche aus den Inhalten der Internetseiten. Alle Angebote und Preise sind freibleibend und unverbindlich. Der Medieninhaber behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
