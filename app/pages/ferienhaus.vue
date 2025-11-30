@@ -59,7 +59,8 @@
       Winter: 160,- € pro Ferienhaus/Nacht + Endreinigung € 50,-<br>
       Preise in Euro und exkl. Ortstaxe (€ 2,50 pro Person/Nacht), es gelten die allgemeinen Geschäftsbedingungen für die Hotellerie
     </p>
-    <a target="blank" href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie" class="inline-block mt-8 button button-primary">AGBH</a>
+    <a target="blank" href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie" class="inline-block mt-8 mr-8 button button-primary">AGBH</a>
+    <a target="blank" href="https://reiteralm-ferienhaus.at/impressum" class="inline-block mt-8 button button-primary">Stornobedingungen</a>
   </div>
 
 

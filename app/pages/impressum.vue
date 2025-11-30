@@ -22,6 +22,16 @@
         <p class="mb-[var(--gap-m)]">
           Alle Informationen und Erklärungen dieser Internetseiten sind unverbindlich. Der Medieninhaber sowie der Ersteller der Website übernehmen für die Richtigkeit, Aktualität und Vollständigkeit der Inhalte keine Gewähr. Es ergeben sich keine Rechtsansprüche aus den Inhalten der Internetseiten. Alle Angebote und Preise sind freibleibend und unverbindlich. Der Medieninhaber behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
         </p>
+
+         <h4>Stornobedingungen</h4>
+        <p class="mb-[var(--gap-m)]">
+          Kostenlose Stornierung bis 3 Monate vor dem Anreisedatum<br/>
+          3 bis 1 Monat vor Anreise: 40% des Gesamtbetrages<br/>
+          1 Monat bis 1 Woche vor Anreise: 70% des Gesamtbetrages<br/>
+          In der letzten Woche vor Anreise: 90% des Gesamtbetrages<br/>
+          Am Anreisetag, Nicht-Erscheinen oder vorzeitige Abreise: 100% des Gesamtbetrages
+        </p>
+    
     
         <h4>Urheberrecht</h4>
         <p class="mb-[var(--gap-m)]">
