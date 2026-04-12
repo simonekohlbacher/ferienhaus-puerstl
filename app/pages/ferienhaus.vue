@@ -1,8 +1,6 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-
   <Hero
     title="Erholsame Auszeit"
     description=".. das ganze Jahr über"
@@ -12,14 +10,23 @@
   />
 
   <div class="text-center max-w-[90vw] mx-auto mb-[var(--gap-xl)]">
-    <h1 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">Ganz in Ruhe genießen</h1>
+    <h1 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">
+      Ganz in Ruhe genießen
+    </h1>
     <p class="[font-size:var(--font-size-h4)]">
-      Unser gemütliches Ferienhäuschen erstreckt sich über 2 Etagen und bietet Platz für bis zu 5 Personen. Mit Blick und direktem Zugang zur Skipiste der Reiteralm ist es der perfekte Ausgangspunkt für zahlreiche Aktivitäten in der Region. Das ganze Jahr über.
+      Unser gemütliches Ferienhäuschen erstreckt sich über 2 Etagen und bietet
+      Platz für bis zu 5 Personen. Mit Blick und direktem Zugang zur Skipiste
+      der Reiteralm ist es der perfekte Ausgangspunkt für zahlreiche Aktivitäten
+      in der Region. Das ganze Jahr über.
     </p>
-    <a href="/kontakt" class="inline-block mt-8 button button-primary">Jetzt Anfragen</a>
+    <a href="/kontakt" class="inline-block mt-8 button button-primary"
+      >Jetzt Anfragen</a
+    >
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-[var(--gap-m)] px-[var(--gap-xl)] justify-items-center mb-[var(--content-gap)]">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-[var(--gap-m)] px-[var(--gap-xl)] justify-items-center mb-[var(--content-gap)]"
+  >
     <CardSimple
       headline="60m²"
       description="2 Etagen bieten Platz für bis zu 5 Personen"
@@ -38,8 +45,11 @@
     />
   </div>
 
-  <img src="/img/bergpanorama.jpg" alt="Bergpanorama" class="w-[100vw] h-[20vh] md:h-[30vh]  lg:h-[60vh]"/>
-
+  <img
+    src="/img/bergpanorama.jpg"
+    alt="Bergpanorama"
+    class="w-[100vw] h-[20vh] md:h-[30vh] lg:h-[60vh]"
+  />
 
   <ImageText
     headline="Gemütliches Zuhause auf Zeit"
@@ -51,22 +61,33 @@
   >
   </ImageText>
 
-
-  <div class="text-center max-w-[90vw] mx-auto mb-[var(--gap-xl)] -mt-[var(--gap-l)]">
-    <h1 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">Preise</h1>
+  <div
+    class="text-center max-w-[90vw] mx-auto mb-[var(--gap-xl)] -mt-[var(--gap-l)]"
+  >
+    <h1 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">
+      Preise
+    </h1>
     <p class="[font-size:var(--font-size-h4)]">
-      Sommer: Auf Anfrage (inkl. Schladming-Dachstein Sommercard)<br>
-      Winter: 160,- € pro Ferienhaus/Nacht + Endreinigung € 50,-<br>
-      Preise in Euro und exkl. Ortstaxe (€ 2,50 pro Person/Nacht), es gelten die allgemeinen Geschäftsbedingungen für die Hotellerie
+      Sommer: Auf Anfrage (inkl. Schladming-Dachstein Sommercard)<br />
+      Winter: 170,- € pro Ferienhaus/Nacht + Endreinigung € 50,-<br />
+      Preise in Euro und exkl. Ortstaxe (€ 2,50 pro Person/Nacht), es gelten die
+      allgemeinen Geschäftsbedingungen für die Hotellerie
     </p>
-    <a target="blank" href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie" class="inline-block mt-8 mr-8 button button-primary">AGBH</a>
-    <a target="blank" href="https://reiteralm-ferienhaus.at/impressum" class="inline-block mt-8 button button-primary">Stornobedingungen</a>
+    <a
+      target="blank"
+      href="https://www.wko.at/oe/tourismus-freizeitwirtschaft/hotellerie/allgemeine-geschaeftsbedingungen-hotellerie"
+      class="inline-block mt-8 mr-8 button button-primary"
+      >AGBH</a
+    >
+    <a
+      target="blank"
+      href="https://reiteralm-ferienhaus.at/impressum"
+      class="inline-block mt-8 button button-primary"
+      >Stornobedingungen</a
+    >
   </div>
 
-
   <Slider />
-
-
 </template>
 
 <style scoped></style>
