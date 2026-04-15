@@ -1,34 +1,63 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
-
-
 :root {
   /** colors **/
-  --color-green: #6E7355;
-  --color-brown: #A86B43;
-  --color-blue: #7DAEDB;
-  --color-offWhite: #F9F7F1;
-  --color-white: #FFF;
+  --color-green: #6e7355;
+  --color-brown: #a86b43;
+  --color-blue: #7daedb;
+  --color-offWhite: #f9f7f1;
+  --color-white: #fff;
   --color-anthrazit: #333933;
-  --color-bg-green: #6E73554D;
-  --color-bg-brown: #E4D8CB;
+  --color-bg-green: #6e73554d;
+  --color-bg-brown: #e4d8cb;
 
   /** font-sizes **/
-  --font-size-h1: clamp(22px, calc(22px + (34 - 22) * ((100vw - 375px) / (1920 - 375))), 34px);
-  --font-size-h2: clamp(32px, calc(32px + (38 - 32) * ((100vw - 375px) / (1920 - 375))), 38px);
-  --font-size-h3: clamp(22px, calc(22px + (34 - 22) * ((100vw - 375px) / (1920 - 375))), 34px);
-  --font-size-h4: clamp(18px, calc(18px + (25 - 18) * ((100vw - 375px) / (1920 - 375))), 25px);
-  --font-size-xxl: clamp(35px, calc(35px + (45 - 35) * ((100vw - 375px) / (1920 - 375))), 45px);
-  --font-size-p: clamp(15px, calc(15px + (18 - 15) * ((100vw - 375px) / (1920 - 375))), 18px);
-  --font-size-button : clamp(17px, calc(17px + (19 - 17) * ((100vw - 375px) / (1920 - 375))), 19px);
-  --font-size-small: clamp(14px, calc(14px + (16 - 14) * ((100vw - 375px) / (1920 - 375))), 16px);
+  --font-size-h1: clamp(
+    22px,
+    calc(22px + (38 - 22) * ((100vw - 375px) / (1920 - 375))),
+    38px
+  );
+  --font-size-h2: clamp(
+    32px,
+    calc(32px + (38 - 32) * ((100vw - 375px) / (1920 - 375))),
+    38px
+  );
+  --font-size-h3: clamp(
+    22px,
+    calc(22px + (34 - 22) * ((100vw - 375px) / (1920 - 375))),
+    34px
+  );
+  --font-size-h4: clamp(
+    18px,
+    calc(18px + (25 - 18) * ((100vw - 375px) / (1920 - 375))),
+    25px
+  );
+  --font-size-xxl: clamp(
+    35px,
+    calc(35px + (45 - 35) * ((100vw - 375px) / (1920 - 375))),
+    45px
+  );
+  --font-size-p: clamp(
+    15px,
+    calc(15px + (24 - 15) * ((100vw - 375px) / (1920 - 375))),
+    24px
+  );
+  --font-size-button: clamp(
+    17px,
+    calc(17px + (19 - 17) * ((100vw - 375px) / (1920 - 375))),
+    19px
+  );
+  --font-size-small: clamp(
+    14px,
+    calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375))),
+    18px
+  );
   --nav-height: 10rem;
 
   /** fonts **/
-  --mainfont: 'Open Sans', sans-serif;
-  --headlinefont: 'Cormorant Garamond', serif;
+  --mainfont: "Open Sans", sans-serif;
+  --headlinefont: "Cormorant Garamond", serif;
 
   /** gap **/
   --gap-s: clamp(10px, 2.66vw, 15px);
@@ -37,7 +66,7 @@
   --gap-xl: clamp(80px, 20vw, 150px);
   --content-gap: clamp(100px, 20vw, 200px);
 
-  --border-radius: 0.30rem;
+  --border-radius: 0.3rem;
 }
 
 body {
@@ -49,7 +78,9 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out;
+  transition:
+    transform 0.9s ease-in-out,
+    filter 0.9s ease-in-out;
 }
 
 img:hover {
@@ -57,33 +88,29 @@ img:hover {
   transform: scale(1.05);
 }
 
-
-
 .nav-link {
   font-size: var(--font-size-h3);
   font-family: var(--headlinefont), serif;
   font-weight: 800;
   text-transform: uppercase;
   transition: all 0.5s ease;
-
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
   .nav-link {
-  font-size: var(--font-size-h4);
+    font-size: var(--font-size-h4);
   }
 }
 
-
 .nav-link:hover {
-   text-decoration: underline;
+  text-decoration: underline;
   color: var(--color-anthrazit);
 }
 
-
 /** FONTS **/
 
-p, li{
+p,
+li {
   font-family: var(--mainfont), sans-serif;
   font-size: var(--font-size-p);
   font-weight: 400;
@@ -120,8 +147,6 @@ h4 {
   font-style: normal;
 }
 
-
-
 /** BUTTONS **/
 
 .button {
@@ -134,7 +159,7 @@ h4 {
   border-radius: var(--border-radius);
   display: inline flex;
   width: auto;
-  padding: calc(var(--gap-s)/2) var(--gap-s);
+  padding: calc(var(--gap-s) / 2) var(--gap-s);
   transition: all 0.5s ease-in-out;
 }
 
@@ -168,51 +193,50 @@ h4 {
 /** typography **/
 /* open-sans */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/OpenSans_Condensed-Regular.ttf") format("truetype");
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
-  src: url('../assets/fonts/OpenSans_Condensed-Medium.ttf') format('truetype');
+  src: url("../assets/fonts/OpenSans_Condensed-Medium.ttf") format("truetype");
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
-  src: url('../assets/fonts/OpenSans_Condensed-Bold.ttf') format('truetype');
+  src: url("../assets/fonts/OpenSans_Condensed-Bold.ttf") format("truetype");
   font-display: optional;
 }
-
 
 /* cormorant-garamond  */
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+  src: url("../assets/fonts/CormorantGaramond-Regular.ttf") format("truetype");
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 500;
-  src: url('../assets/fonts/CormorantGaramond-Medium.ttf') format('truetype');
+  src: url("../assets/fonts/CormorantGaramond-Medium.ttf") format("truetype");
   font-display: optional;
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+  src: url("../assets/fonts/CormorantGaramond-Bold.ttf") format("truetype");
   font-display: optional;
 }

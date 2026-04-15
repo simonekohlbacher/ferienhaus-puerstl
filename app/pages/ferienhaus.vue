@@ -9,7 +9,7 @@
     :opacity="0.4"
   />
 
-  <div class="text-center max-w-[90vw] mx-auto mb-[var(--gap-xl)]">
+  <div class="text-center max-w-[70vw] mx-auto mb-[var(--gap-xl)]">
     <h1 class="[font-size:var(--font-size-h1)] mb-8 text-[var(--color-green)]">
       Ganz in Ruhe genießen
     </h1>
