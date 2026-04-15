@@ -69,7 +69,7 @@
     </h1>
     <p class="[font-size:var(--font-size-h4)]">
       Sommer: Auf Anfrage (inkl. Schladming-Dachstein Sommercard)<br />
-      Winter: 170,- € pro Ferienhaus/Nacht + Endreinigung € 50,-<br />
+      Winter: 170,- € pro Ferienhaus/Nacht + Endreinigung € 70,-<br />
       Preise in Euro und exkl. Ortstaxe (€ 2,50 pro Person/Nacht), es gelten die
       allgemeinen Geschäftsbedingungen für die Hotellerie
     </p>
